@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "Conditioner",
+  "description": "This extension plays a loud sound if an unproductive site is visited.",
+  "version": "1.0",
+  "background": { "scripts": ["bang.js"] },
+  "browser_action":{
+    "default_popup":"popup.html"
+  },
+  "permissions": [
+  	"storage",
+    "tabs",
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "webNavigation",
+    "*://*/*"
+  ]
+}
